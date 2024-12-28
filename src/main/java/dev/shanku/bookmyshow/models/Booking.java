@@ -11,8 +11,9 @@ import java.util.List;
 @Setter
 @Entity(name = "bookings")
 public class Booking extends BaseModel{
+
     @Enumerated(EnumType.ORDINAL)
-    private String bookingStatus;
+    private BookingStatus bookingStatus;
 
     private Date bookingDate;
     private  int amount;
@@ -21,7 +22,9 @@ public class Booking extends BaseModel{
     private User user;
     @OneToMany
     private List<ShowSeat> showSeats;
-    @OneToMany
-    private List<Payment> payments;
+//    @OneToMany
+//    private List<Payment> payments;
 
 }
+//either use @OneToMany with @JoinColumn
+//or use @ManyTo One

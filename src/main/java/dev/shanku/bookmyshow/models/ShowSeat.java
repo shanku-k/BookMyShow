@@ -18,4 +18,7 @@ public class ShowSeat extends BaseModel{
     //private SeatType seatType;
     @Enumerated(EnumType.ORDINAL)
     private ShowSeatStatus showSeatStatus;
+
+    @ManyToOne
+    private Booking booking;
 }
