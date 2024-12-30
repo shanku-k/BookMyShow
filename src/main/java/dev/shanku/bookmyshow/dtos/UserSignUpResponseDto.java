@@ -1,11 +1,12 @@
 package dev.shanku.bookmyshow.dtos;
-import dev.shanku.bookmyshow.models.Booking;
+
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class BookingResponseDto {
-    private Booking booking;
+public class UserSignUpResponseDto {
+    private String email;
+    private String name;
     private ResponseStatus responseStatus;
 }
